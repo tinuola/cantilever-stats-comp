@@ -4,7 +4,7 @@ export const Button = styled.button`
   background-color: #9f8de4;
   border: none;
   border-radius: 1.75rem;
-  font-family: 'Graphik';
+  font-weight: 600;
   margin-top: 2rem;
   padding: 1.25rem 0;
   width: 100%;
@@ -41,6 +41,7 @@ export const Header = styled.header `
 
 export const Heading = styled.h2 `
   color: ${({ color }) => color };
+  font-family: 'Caslon';
   font-size: 3.65rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -58,8 +59,9 @@ export const Heading = styled.h2 `
 
 export const Subheading = styled.h3 `
   font-family: 'Graphik-Regular';
-  font-weight:lighter;
+  font-weight: lighter;
   font-size: 1rem;
+  line-height: 1.8;
 
   @media (min-width: 991px){
     font-size: 1.125rem;

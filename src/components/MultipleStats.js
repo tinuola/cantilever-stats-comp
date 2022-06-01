@@ -1,8 +1,9 @@
 import { Button, FlexHeading, FlexSubheading, Header, Heading, Subheading } from './styles/Header.styled';
-import { Frame } from './styles/Layout.styled';
+import data from '../data';
+import { ImageCaption, StatsContainer, StatItem, StatData, StatText } from './styles/Main.styled';
+import { Divider, Frame } from './styles/Layout.styled';
 
 function MultipleStats () {
-
   return(
     <>
       <Frame>
@@ -17,9 +18,22 @@ function MultipleStats () {
           </FlexSubheading>
         </Header>
       </Frame>
-
-      <main>
-      </main>
+      <Divider/>
+      {/* <main> */}
+        <Frame>
+          <img src="https://via.placeholder.com/1920x900" alt="Real Calibrate members" />
+          <ImageCaption>Real Calibrate Members</ImageCaption>
+        </Frame>
+        <StatsContainer>
+          {data.map((item) => (
+            <StatItem>
+              <img src={item.icon} alt="Icon" />
+              <StatData suffix={item.suffix}>{item.number}</StatData>
+              <StatText>{item.stat_text}</StatText>
+            </StatItem>
+          )) }
+        </StatsContainer>
+      {/* </main> */}
     </>
   )
 }

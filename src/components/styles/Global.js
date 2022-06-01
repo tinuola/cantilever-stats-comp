@@ -27,8 +27,8 @@ const GlobalStyles = createGlobalStyle`
   body {
     background-color: #221e3f;
     color: #fff;
-    font-family: 'Caslon';
-    line-height: 1.8;
+    font-family: 'Graphik';
+
   }
 `
 export default GlobalStyles;
