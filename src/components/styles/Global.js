@@ -19,16 +19,11 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
 
-  img {
-    display: block;
-    max-width: 100%;
-  }
-
   body {
     background-color: #221e3f;
     color: #fff;
     font-family: 'Graphik';
-
+    line-height: 1.5;
   }
 `
 export default GlobalStyles;

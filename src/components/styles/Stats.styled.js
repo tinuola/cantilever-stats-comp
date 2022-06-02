@@ -1,13 +1,5 @@
 import styled from "styled-components";
 
-export const ImageCaption = styled.p`
-  bottom: .75rem;
-  font-size: .75rem;
-  font-weight:600;
-  position: absolute;
-  right: 2rem;
-`
-
 export const StatsContainer = styled.section`
   display: flex;
   justify-content: center;
@@ -31,6 +23,11 @@ export const StatItem = styled.div`
   flex-basis: 50%;
   padding: 2rem 1.75rem 2.5rem 1.75rem;
 
+  &:nth-child(1),
+  &:nth-child(3){
+    border-left-width: 0;
+  }
+
   &:nth-child(3),
   &:nth-child(4){
     border-top-width: 0;
@@ -40,6 +37,10 @@ export const StatItem = styled.div`
     border-bottom-width: 0px;
     border-top-width: 0px;
     flex-basis: 25%;
+
+    &:nth-child(3){
+      border-left-width: 1px;
+    }
   }
 
   @media(min-width: 991px){
@@ -53,11 +54,16 @@ export const StatItem = styled.div`
   }
 `
 
-export const StatData = styled.p`
+export const StatIcon = styled.img`
+  display: block;
+  max-width: 100%;
+`
+
+export const StatNum = styled.h4`
   font-family: 'Caslon';
   font-size: 4rem;
   font-weight: 600;
-  line-height: 1.5;
+  margin-bottom: .5rem;
 
   &::after {
     content: '${({ suffix }) => suffix }';
@@ -72,7 +78,6 @@ export const StatData = styled.p`
 export const StatText = styled.p`
   font-family: 'Graphik';
   font-size: .75rem;
-  line-height: 1.3;
   text-transform: uppercase;
 
   @media(min-width: 600px){

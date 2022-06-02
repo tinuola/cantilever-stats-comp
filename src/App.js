@@ -2,7 +2,7 @@ import { Container } from './components/styles/Layout.styled';
 import GlobalStyles from './components/styles/Global';
 import MultipleStats from './components/MultipleStats';
 
-function App() {
+export default function App() {
   return (
     <>
       <GlobalStyles />
@@ -12,5 +12,3 @@ function App() {
     </>
   );
 }
-
-export default App;

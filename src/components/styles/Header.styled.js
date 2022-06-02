@@ -1,23 +1,32 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const CtaLabel = styled.span`
+  font-family: 'Graphik';
+  font-size: .875rem;
+  font-weight: 600;
+`
+
+export const CtaLink = styled.a`
   background-color: #9f8de4;
   border: none;
   border-radius: 1.75rem;
-  font-weight: 600;
+  color: #000;
+  display: block;
   margin-top: 2rem;
-  padding: 1.25rem 0;
+  padding: 1rem 0;
+  text-align: center;
+  text-decoration: none;
   width: 100%;
 
   @media (min-width: 500px){
-    width: 250px;
+    width: 265px;
   }
 `
 
 export const FlexHeading = styled.div`
-@media (min-width: 991px){
-  flex-basis: 65%
-}
+  @media (min-width: 991px){
+    flex-basis: 65%
+  }
 `
 
 export const FlexSubheading = styled.div`
