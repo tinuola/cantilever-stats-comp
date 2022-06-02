@@ -5,6 +5,7 @@ import {
   FlexSubheading,
   Header,
   Heading,
+  Hidden,
   Subheading,
 } from './styles/Header.styled';
 import { Image, ImageCaption } from './styles/Image.styled';
@@ -19,6 +20,7 @@ export default function MultipleStats() {
       <Frame>
         <Header>
           <FlexHeading>
+            <Hidden>Calibrate</Hidden>
             <Heading color='#9f8de4'>Guaranteed Results</Heading>
             <Heading color='#fff'>You Can See and Feel</Heading>
           </FlexHeading>

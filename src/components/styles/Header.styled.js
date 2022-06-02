@@ -51,19 +51,33 @@ export const Header = styled.header `
 export const Heading = styled.h2 `
   color: ${({ color }) => color };
   font-family: 'Caslon';
-  font-size: 3.65rem;
+  font-size: 4rem;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 1.1;
   text-transform: uppercase;
+  width: 275px;
 
-  @media (min-width: 500px){
+  @media (min-width: 550px){
     font-size: 5rem;
+    width: 100%;
   }
   
   @media (min-width: 1200px){
     font-size: 6rem;
   }
+`
+
+export const Hidden = styled.h1`
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 `
 
 export const Subheading = styled.h3 `
