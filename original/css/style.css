@@ -1,0 +1,265 @@
+@font-face {
+  font-family: 'Caslon';
+  src: url('../assets/fonts/CaslonDoricCondensed-Bold.ttf') format('truetype');
+  src: url('../assets/fonts/CaslonDoricCondensed-ExtBold.ttf') format('truetype');
+  src: url('../assets/fonts/CaslonDoricCondensed-Medium.ttf') format('truetype');
+  src: url('../assets/fonts/CaslonDoricCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('../assets/fonts/Graphik-Bold.ttf') format('truetype');
+  src: url('../assets/fonts/Graphik-Medium.ttf') format('truetype');
+  src: url('../assets/fonts/Graphik-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/Graphik-Semibold.ttf') format('truetype');
+}
+
+body {
+  background-color: #221e3f;
+  color: #fff;
+  font-family: 'Graphik';
+  line-height: 1.5;
+}
+
+/**** Layout ****/
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  min-width: 375px;
+  padding: 2.5rem 0;  
+  width: 100%;
+}
+
+.frame {
+  margin: 0 1.75rem;
+  position: relative;
+}
+
+@media (min-width: 991px){
+  .frame {
+    margin: 0 4rem;
+  }
+}
+
+.divider {
+  background-color: #423d6a;
+  border: none;
+  height: 1px;
+  margin: 2.5rem 0;
+}
+
+/**** Header ****/
+
+h1.hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+@media (min-width: 991px){
+  header {
+    display: flex;
+  }
+}
+
+@media (min-width: 991px){
+  .flexHeading {
+    flex-basis: 65%;
+  }
+}
+
+.heading {
+  font-family: 'Caslon';
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  width: 275px;
+}
+
+.heading:nth-of-type(1){
+  color: #9f8de4;
+}
+
+@media (min-width: 550px){
+  .heading {
+    font-size: 5rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px){
+  .heading {
+    font-size: 6rem;
+  }
+}
+
+.flexSubheading {
+  margin-top: 2rem;
+}
+
+@media (min-width: 767px){
+  .flexSubheading {
+    width: 640px;
+  }
+}
+
+@media (min-width: 991px){
+  .flexSubheading {
+    margin-top: 0;
+    width: 415px;
+  }
+}
+
+.subheading {
+  font-family: 'Graphik-Regular';
+  font-weight: lighter;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+@media (min-width: 991px){
+  .subheading{
+    font-size: 1.125rem;
+  }
+}
+
+.ctaLink{
+  background-color: #9f8de4;
+  border: none;
+  border-radius: 1.75rem;
+  color: #000;
+  display: block;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+@media (min-width: 500px){
+  .ctaLink {
+    width: 265px;
+  }
+}
+
+.ctaLabel {
+  font-family: 'Graphik';
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+/**** Image ****/
+
+.imageCaption {
+  bottom: .75rem;
+  font-size: .75rem;
+  font-weight:600;
+  position: absolute;
+  right: 2rem;
+}
+
+/**** Stats ****/
+
+.statsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 675px){
+  .statsContainer{
+    border-top: 1px solid #423d6a;
+    border-bottom: 1px solid #423d6a;
+  }
+}
+
+@media(min-width: 991px){
+  .statsContainer {
+    padding-left: 4rem;
+    padding-right: 4rem;    
+  }
+}
+
+.statItem {
+  border: 1px solid #423d6a;
+  border-right-width: 0;
+  flex-basis: 50%;
+  padding: 2rem 1.75rem 2.5rem 1.75rem;
+}
+
+.statItem:nth-child(1),
+.statItem:nth-child(3){
+  border-left-width: 0;
+}
+
+.statItem:nth-child(3),
+.statItem:nth-child(4){
+  border-top-width: 0;
+}
+
+@media (min-width: 675px){
+  .statItem {
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    flex-basis: 25%;
+  }
+
+  .statItem:nth-child(3){
+    border-left-width: 1px;
+  }
+}
+
+@media(min-width: 991px){
+  .statItem:nth-child(1){
+    border-left-width: 1px;
+  }
+
+  .statItem:nth-child(4) {
+    border-right-width: 1px;
+  }
+}
+
+ion-icon {
+  font-size: 2.5rem;
+  color: #9f8de4;
+}
+
+.statNum {
+  font-family: 'Caslon';
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+@media(min-width: 991px){
+  .statNum {
+    font-size: 5rem;
+  }
+}
+
+.statNum::after {
+  content: '\0025';
+  margin-left: .125rem;
+}
+
+.statText {
+  font-family: 'Graphik';
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+@media(min-width: 600px){
+  .statText {
+    width: 90%;
+  }
+}
